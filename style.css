@@ -283,13 +283,21 @@ z-index: 999;
 }
 
 .main__img--container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
 }
 
-#main__img {
-    height: 80%;
-    width: 80%;
+#main_img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px; 
 }
+
 
 /*Mobile*/
 @media screen and (max-width: 768px) {
